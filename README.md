@@ -1,21 +1,20 @@
 # LucyInOpenAI
 An Experiment using OpenAI Vision and Chat API Services from a Unity Game Environment 
 
-Some goofing around with the OpenAI GPT4o Chat and Vision API, from a Unity Environment .
-I have also used the Google Text to Speech API service to animate the Agnet oices, of the returned Chat textual conversations. 
+Some goofing around with the OpenAI GPT4o Chat and Vision API, from an Agent operating in a Unity Environment .
+I have also used the Google Text to Speech API service to animate the Agnet voices, to animate the returned OpenAI Chat textual conversations. 
 
-![ScreenShot](ExpArch.PNG)
+![ScreenShot](ExpArch.png)
 
 ## Video Demonstration ##
 Please see the [brief You Tube Video demonstration here](https://www.youtube.com/watch?v=rAbuMg2NdRY)  
-
 
 ## Experiment Architecture ##
 
 
 Note the Agent is Manually controlled, with Manual initiated requests for a vision cature and awareness. There is no automated Agent control (yet) in this simulation.  
 
-The C# OKGoDoIt wrapper servcies for OpenAI, are awaiting a major revamp. See his Github page, to utilise the latest OpenAI services. I had difficulty in getting the current provided C# wrapper API, to work with the Open AI GPT4o vision (image upload) models. So being impatient, I reverted to a pyhton intercation with Open AI for the GPT4o vision API. There is a lot quicker and more reponsive support in python OpneAi packages. So I deffered those image interaction into a local python flask web server. This picked up the local image file, and uploaded it into OpenAI GPT4o visions services.  The Unity environment, then query polls the web service for any responses      
+The C# OKGoDoIt wrapper services for OpenAI, are awaiting a major revamp. See his Github page, to utilise the latest OpenAI services. I had difficulty in getting the current provided C# wrapper API, to work with the Open AI GPT4o vision (image upload) models. So being impatient, I reverted to a pyhton intercation with Open AI for the GPT4o vision API. There is a lot quicker and more reponsive support in python OpneAI packages. So I deffered those image interaction into a local python flask web server. This picked up the local image file, and uploaded it into OpenAI GPT4o visions services.  The Unity environment, then query polls the web service for any responses      
 
 
 ##  Open AI Services ##
