@@ -4,7 +4,7 @@ An Experiment using OpenAI Vision and Chat API Services from a Unity Game Enviro
 Some goofing around with the OpenAI GPT4o Chat and Vision API, from a Unity Environment .
 I have also used the Google Text to Speech API service to animate the Agnet oices, of the returned Chat textual conversations. 
 
-![ScreenShot](OverviewPic2.PNG)
+![ScreenShot](ExpArch.PNG)
 
 ## Video Demonstration ##
 Please see the [brief You Tube Video demonstration here](https://www.youtube.com/watch?v=rAbuMg2NdRY)  
