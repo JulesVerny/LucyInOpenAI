@@ -1,8 +1,7 @@
 # LucyInOpenAI
-An Experiment using OpenAI Vision and Chat API Services from a Unity Game Environment 
+Arough Experiment using OpenAI Vision and Chat API Services from a low poly Unity Game Environment 
 
-Some goofing around with the OpenAI GPT4o Chat and Vision API, from an Agent operating in a Unity Environment .
-I have also used the Google Text to Speech API service to animate the Agnet voices, to animate the returned OpenAI Chat textual conversations. 
+Some goofing around with the use of  OpenAI GPT4o Chat and Vision API services, from an game Agent operating in a Unity Environment .
 
 ![ScreenShot](ExpArch.png)
 
@@ -34,6 +33,7 @@ Note I have provided a most of the Unity Enviornment here, as a Unity Package.  
 - SkyBox Materials and Textures (Free Asset from Unity Asset Store) 
 - A few Materials Textures, as too large to export  
 
+I have also used the Google Text to Speech API service to animate the Agnet voices, to animate the returned OpenAI Chat textual conversations. 
 
 ##  Open AI Services ##
 
@@ -59,23 +59,24 @@ You will need a python environment with OpenAI and Flask packages installed. Ths
 
 
 
-## Discussion ##
+## Observations and Discussion ##
 
-The experience is quite fun, buit a little stilted. The Web based OpenAI Reques/Responses take several seconds and so it is not a real time responsive experience. OpenAI Vsion is only accepting still images, and not live real time video. And so there is a latency and delay from what was viwed previously.  
+The Architecture and GPT4o OPEN AI Services offer a reasonable level of recognition and understanding of the game environment scene.
 
-The OpenAI vion can only describe main objects and features within the View presented to it. It cannot appreciate the spatial view, left, right, behind, in realtion to the Agent in the 3D environment.  So there is no real spatial awareness connection. 
+It is a rather stilted experience.  The Web based OpenAI Reques/Responses take several seconds and so it is not a real time responsive experience. OpenAI Vsion is only accepting still images, and not live real time video. And so there is a latency and delay from what was viwed previously.  Note we can expect video assessments and live stream services in the future.
 
-Note I had to seperate the Chat Intercations from the Vision requests. So there is some discontinuity between the vision and the conversational contextes. 
+The OpenAI vision can currently only describe main objects and features within the View presented to it. It cannot appreciate the spatial view, left, right, behind, in relation to the Agent in the 3D environment.  So there is no real spatial awareness connection. 
 
+There is rather limited contextual retention from previous view snapshots and what the Agent has done previously. This was constrained as  I had to seperate the Chat Intercations from the Vision requests. So there is some discontinuity between the vision and the conversational contextes. 
 
-
-
+We could expect better recognition performance in a higher fidelity game environment. (e.g. the use of High Fidelity Assets and scenes within the Unreal game engine) 
 
 
 ## Further Work and Development ##
 
-I have to understand and introduce a Command Context within the OpenAI Chat Sessions. So that 
+To understand how to issue a Command Syntax within the OpenAI Chat reposnes, so we can get the Chat to instruct the Agent, and hence more autonmous operation. 
 
+Review performance in a higher fidelity game environment. (Perhaps replicate in Unreal, with high qulaity assets) 
 
 ## Acknowledgements ##
 
@@ -83,5 +84,8 @@ I have to understand and introduce a Command Context within the OpenAI Chat Sess
 - [OKGoDolt A C# Wrapper for OPEN AI Calls](https://github.com/OkGoDoIt/OpenAI-API-dotnet)
 - [FrostWeep Games: Google Text to Speech Wrapper Asset]( https://assetstore.unity.com/packages/add-ons/machinelearning/text-to-speech-using-google-cloud-pro-115170#description)
 -
+
+And watch any Connor Leahy in conversation. He is  awesome in awareness and explanation. 
+https://www.youtube.com/watch?v=YZjmZFDx-pA
 
 
