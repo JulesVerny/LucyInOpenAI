@@ -65,6 +65,8 @@ We could expect better recognition performance in a higher fidelity game environ
 
 ## Further Work and Development ##
 
+The performance could be improvement with more effort and experimentation into the prompt statements made into OpenAI queries. 
+
 To understand how to issue a Command Syntax within the OpenAI Chat responees, so to get the Chat reponses to instruct the Agent movements and actions, and hence more autonmous operation. 
 
 Review performance in a higher fidelity game environment. (Perhaps replicate in Unreal, with high quality game assets) 
