@@ -2,7 +2,7 @@
 A rough Experiment into the use of OpenAI Vision and Chat API Services from a low poly Unity Game Environment. It uses OpenAI GPT4o Chat and Vision API services from a Game Agent within Unity environment.
 
 ## Video Demonstration ##
-Please see this You Tube Video Demonstration [brief You Tube Video demonstration here](https://www.youtube.com/watch?v=rAbuMg2NdRY)  
+Please see this You Tube Video Demonstration [Lucy In Sky with OPEN AI Services Video demonstration here](https://www.youtube.com/watch?v=8Y7ENoYFzZM)  
 
 ## Implementation Details ##
 This experiment is based upon a combination of a Unity Game Environment, calling out into Open AI GPT4o Web API Services.  An interim python Web Server is utilised to broker GPT4O vsion requests.   
