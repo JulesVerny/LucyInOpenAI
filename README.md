@@ -1,13 +1,13 @@
-# Lucy In The Sky With OPENAi Services
-A rough Experiment into using OpenAI Vision and Chat API Services from a low poly Unity Game Environment. It uses OpenAI GPT4o Chat and Vision API services from a Game Agent within Unity environment.
+# Lucy In The Sky With OPENAI Services #
+A rough Experiment into the use of OpenAI Vision and Chat API Services from a low poly Unity Game Environment. It uses OpenAI GPT4o Chat and Vision API services from a Game Agent within Unity environment.
 
 ## Video Demonstration ##
-Please see the [brief You Tube Video demonstration here](https://www.youtube.com/watch?v=rAbuMg2NdRY)  
+Please see this You Tube Video Demonstration [brief You Tube Video demonstration here](https://www.youtube.com/watch?v=rAbuMg2NdRY)  
 
 ## Implementation Details ##
 This experiment is based upon a combination of a Unity Game Environment, calling out into Open AI GPT4o Web API Services.  An interim python Web Server is utilised to broker GPT4O vsion requests.   
+Google Text to Speech API services are used to animate the OpenAI Chat textual responses into voice. 
 
-I have also used the Google Text to Speech API service to animate the Agnet voices, to animate the returned OpenAI Chat textual conversations. 
 ![ScreenShot](DetailedArch.png)
 
 ### Unity Scene  ###
@@ -23,7 +23,7 @@ The main Unity script files are:
 - TerminalManager.CS   :  This manages a Terminal like Usr Interface.
 
 ### Unity Package Limitations ###
-Note I have provided a most of the Unity Enviornment here, as a Unity Package.  However some of the third party assets are missing due to limited upload size and lisence rights: 
+Most of the Unity Enviornment is provided here, as a Unity Package.  However some of the third party assets are missing due to limited upload size and lisence rights: 
 - Zombie Models (Note these are a free download from Mizamo)      
 - FrostByte Text To Speech Services (Paid Asset in Unity Asset Store)  
 - Jodrell Bank and the StormTrooper models
@@ -32,7 +32,7 @@ Note I have provided a most of the Unity Enviornment here, as a Unity Package.  
 
 ###  Open AI Services and Use of a Local Python Web Server ##
 
-The C# OKGoDoIt package provides a C# interface with OpenAI services. See refernce to the GitHub based project below. Although this packae is getting a little out of date. It still provides a foundation for basic Chat based interactions with OpenAI Chat services. The OpenAIInterface.CS uses this package for the direct chat interactions with Open AI. 
+The C# OKGoDoIt package provides a C# interface with OpenAI services. (See OKGoDoIt GitHub Link Below) Although this package is getting a little out of date. It still provides a foundation for basic Chat based interactions with OpenAI Chat services. The OpenAIInterface.CS uses this package for the direct chat interactions with Open AI. 
 
 However for the image based uploads and interaction, I had difficulty in getting this C# based interface to work. So being impatient, I reverted to a python interaction with Open AI for the GPT4o vision API. There is a lot quicker and more reponsive support in python OpenAI packages. The image based interactions with OpenAI are via a local python flask web server.  
 
@@ -47,7 +47,7 @@ This local web server provides two http POST based endpoints:
 
 You will need a python environment with OpenAI and Flask packages installed. Thsi local web server can be run simply as python OpenAIInterfaceWebServer.py
 
-Note C# OKGoDoIt wrapper services for OpenAI, is  awaiting a major revamp very soon (June 2024), where it will become more consistent with supporting the latest OpenAI services.  This will hopefully soon provide opportunity to avoid deferring the file upload to a pyhton based service. 
+Note C# OKGoDoIt wrapper services for OpenAI, is  awaiting a major revamp very soon (June 2024), where it will become more consistent with supporting the latest OpenAI services.  This will hopefully soon provide a current C# based OpenAI interface to avoid deferring file uploads via python based services. 
 
 ## Observations and Discussion ##
 
