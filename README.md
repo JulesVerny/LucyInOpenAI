@@ -53,7 +53,9 @@ Note C# OKGoDoIt wrapper services for OpenAI, is  awaiting a major revamp very s
 
 The Architecture and GPT4o OPEN AI Services offer a reasonable level of recognition and understanding of the game environment scene.
 
-It is a rather stilted experience.  The Web based OpenAI Reques/Responses take several seconds and so it is not a real time responsive experience. OpenAI Vsion is only accepting still images, and not live real time video. And so there is a latency and delay from what was viwed previously.  Note we can expect video assessments and live stream services in the future.
+It is a rather stilted experience.  The Web based OpenAI Reques/Responses take several seconds and so it is not a real time responsive experience.  The response performance of OPENAI Web Service API calls can vary from reasonable, to rather poor,  to plain unusable at times. 
+
+OpenAI Vsion is only accepting still images, and not live real time video. And so there is a latency and delay from what was viewed previously.  Note we can expect live stream videoassessments at some point in the future.
 
 The OpenAI vision can currently only describe main objects and features within the View presented to it. It cannot appreciate the spatial view, left, right, behind, in relation to the Agent in the 3D environment.  So there is no real spatial awareness connection. 
 
