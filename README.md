@@ -9,13 +9,13 @@ Some goofing around with the use of  OpenAI GPT4o Chat and Vision API services, 
 Please see the [brief You Tube Video demonstration here](https://www.youtube.com/watch?v=rAbuMg2NdRY)  
 
 ## Experiment Architecture ##
+This experiment is based upon a combination of a Unity Game Environment, calling out into Open AI GPT4o Web API Services.  An interim python Web Server is utilised to broker GPT4O vsion requests.   
 
-## Unity Scene  ##
+### Unity Scene  ###
 I have used the Unity game engine, as basis for setting up a character within a scene.  Unity is well understood and quick environment for creating game scenes and for simulating agents operating in a synthetic environment. It utilises .NET C# runtime as its main scripting language.  
 ![ScreenShot](UnityPitch.PNG)
 
 Note the Agent is Manually controlled, with Manual initiated requests for a vision cature and awareness. There is no automated Agent control (yet) in this simulation.  
-
 
 The main Unity script files are:
 - ExperimentManager.CS      :  This is the overall Experiment coordination. It manages the responses from the User Interface, into the Agent
@@ -38,12 +38,14 @@ I have also used the Google Text to Speech API service to animate the Agnet voic
 
 The C# OKGoDoIt package provides a C# interface with OpenAI services. See refernce to the GitHub based project below. Although this packae is getting a little out of date. It still provides a foundation for basic Chat based interactions with OpenAI Chat services. The OpenAIInterface.CS uses this package for the direct chat interactions with Open AI. 
 
-However for the image based uploads and interaction, I had difficulty in getting this C# based interface to work. So being impatient, I reverted to a python interaction with Open AI for the GPT4o vision API. There is a lot quicker and more reponsive support in python OpenAI packages. The image based interactions with OpenAI are via a local python flask web server. 
+However for the image based uploads and interaction, I had difficulty in getting this C# based interface to work. So being impatient, I reverted to a python interaction with Open AI for the GPT4o vision API. There is a lot quicker and more reponsive support in python OpenAI packages. The image based interactions with OpenAI are via a local python flask web server.  
+
+The Agent's first person View, is rendered from the Agents front facing camera into a Rendered Texture within Unity. Upon a request to perform a View Assessment, this rendered texture is written out to a local file.  See the TakeFrontPicture() method within MainAgent.CS.  This file is then passed up into OpenAI GPT:40 vision service, via the Flask based  OpenAIInterfaceWebServer.py, which reads the files, processes it into bytes suitable for the OpenAi GPT4o vision API web service call.  
 
 ![ScreenShot](DetailedArch.png)
 
 I had to utilise a python interface to the OpenAI vision service. Please see the basic Flask based python Web Server within the OpenAIInterfaceWebServer.py.   
-In addition to a python based call, this web interface, enables the long Open AI web qury response, lage times to be thread decoupled from the running of the Unity Game Environment. 
+In addition to a python based call, this web interface, enables the long Open AI web query response, lage times to be thread decoupled from the running of the Unity Game Environment. 
 
 This local web server provides two http POST based endpoints:
 - requestview:        This Service method reads the local Image File, and uploads to OpenAI: GPT4o Web service API, requesting a basic description of whats in the view image
