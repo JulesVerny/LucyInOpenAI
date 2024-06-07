@@ -1,7 +1,5 @@
-# LucyInOpenAI
+# Lucy In The Sky With OPENAi Services
 A rough Experiment into using OpenAI Vision and Chat API Services from a low poly Unity Game Environment. It uses OpenAI GPT4o Chat and Vision API services from a Game Agent within Unity environment.
-
-![ScreenShot](ExpArch.png)
 
 ## Video Demonstration ##
 Please see the [brief You Tube Video demonstration here](https://www.youtube.com/watch?v=rAbuMg2NdRY)  
